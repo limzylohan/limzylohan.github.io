@@ -48,8 +48,8 @@
         <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
           <div class="col-lg-10 ftco-animate d-flex align-items-center">
           	<div class="text text-center">
-          		<h1 class="mb-3 bread">Blog Single Post</h1>
-	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog Single <i class="ion-ios-arrow-forward"></i></span></p>
+          		<h1 class="mb-3 bread">Analysis Tool</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span>  <span>Post <i class="ion-ios-arrow-forward"></i></span></p>
             </div>
           </div>
         </div>
@@ -58,21 +58,151 @@
 		
 		<section class="ftco-section">
       <div class="container">
-        <div class="row">
+        <div class="row" align="center">
           <div class="col-lg-12 ftco-animate">
-            <h2 class="mb-3">It is a long established fact a reader be distracted</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
+            <h2 class="mb-3">Summary</h2>
+            <p>The application provides the client with a robust analytics web application that processes and analyzes returns of assets
+            obtained from Bloomberg and provides insights for maangers to construct and optimize their portfolio. Code and client name not provided
+            for confidentiality</p>
             <p>
             </p>
-            <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>
-            <h2 class="mb-3 mt-5">#2. Creative WordPress Themes</h2>
-            <p>Temporibus ad error suscipit exercitationem hic molestiae totam obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora maiores ex architecto voluptatum aut officia doloremque. Error dolore voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
-            <p>
-            </p>
-            <p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.</p>
-            <p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>
-            <p>Adipisci vero culpa, eius nobis soluta. Dolore, maxime ullam ipsam quidem, dolor distinctio similique asperiores voluptas enim, exercitationem ratione aut adipisci modi quod quibusdam iusto, voluptates beatae iure nemo itaque laborum. Consequuntur et pariatur totam fuga eligendi vero dolorum provident. Voluptatibus, veritatis. Beatae numquam nam ab voluptatibus culpa, tenetur recusandae!</p>
-            <p>Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?</p>
+            <p>Features include Asset Analysis, Regression Analysis, Asset clustering and Portfolio Optimization</p>
+            <div class="col-4">
+            </div>
+            <div class="col-8">
+              <img style="width:600px;" src="images/post1/portfolio_analysis.png">
+            </div>
+
+            <h2 class="mb-3 mt-5">Methodology</h2>
+            <h3><u>Regression Analysis</u></h3> <br>
+                          The main output of the regression analysis is to identify the indicator 
+                          which has the best relationship with a user-defined relative asset pair.
+                        </p>
+
+                        <img src="images/post1/workflow.png">
+
+                        <br>
+
+                        <p>After the user uploads the files, the system will cycle through multiple transformations and 
+                        combinations of the assets and indicators, which is detailed in the tables below:</p>
+
+                        <table  border="1" style="text-align:center">
+                            <tr>
+                              <th colspan="2">Asset Transformations</th>
+                            </tr>
+                            <tr>
+                              <td>Rolling Return Period</td>
+                              <td>13,26,52,104 weeks</td>
+                            </tr>
+                            <tr>
+                              <td>Moving Average Window</td>
+                              <td>4 weeks</td>
+                            </tr>
+                        </table>
+                        
+                        <br>
+
+                        <table border="1">
+                            <tr>
+                              <th colspan="2">Indicator Transformations</th>
+                            </tr>
+                            <tr>
+                              <td>Statistical Transformations</td>
+                              <td>Untransformed, Log, Inverse, Z-Score, Difference, 2nd Order Derivative</td>
+                            </tr>
+                            <tr>
+                              <td>Moving Average Window</td>
+                              <td>4 weeks</td>
+                            </tr>
+                        </table>
+                        <br> 
+
+                          <p>After the statistical transformations are completed for each indicator,
+                           a stationarity check is conducted using the Augmented Dickey-Fuller Test. 
+                          If a transformation is found to be non-stationary, it will be dropped from the analysis. </p>
+
+
+                          <p>The regression is then run on the above variables with different analysis parameters, namely:</p>
+
+                          <table border="1">
+
+                            <tr>
+                              <th></th>
+                              <th>Parameters</th>
+                              <th>Explanation</th>
+                            </tr>
+
+                            <tr>
+                              <td>Time Lag</td>
+                              <td>Measured in weeks: 0, 4, 8, 12,24 <br> -4, -8, -12, -24</td>
+                              <td>Negative time lags refer t oassets being the leading variable and 
+                              indicators being the lagging variable, while positive time lags reer to the opposite</td>
+                            </tr>
+
+                            <tr>
+                              <td>Time Period</td>
+                              <td>Measured in Years: 2, 5, 10, Maximum</td>
+                              <td>-Maximum period: refers to full non-NA history for the particular relative asset 
+                              or indicator pair of interest <br><br>
+                              - if assets have histories shorter than required, they would be excluded from the analysis combinations
+                              Eg: if Asset A has 7 years worth of history, it would be analysed for periods of 2, 5 and maximum period -
+                              where maximum would be 7 years in this case</td>
+                            </tr>
+                          </table>
+
+                          <br>
+                          <p>The metric used in evaluating the fit of the regression line is Root Mean Square Error (RMSE). The calculation
+                          formula used is : 
+                          <img src="images/post1/RMSE.png">
+                          where ŷ is the predicted value and y is the actual value of the dependent variable, which is the returns of the 
+                          relative asset pair in this case. The rationale for using this metric is that it shows the absolute fit of the
+                          regression line to the variables, and also shows how accurately the regression line predicts the returns of 
+                          the relative asset. This would allow us to understand how significant this relationship can be 
+                          while expanding changes in the relative asset returns in the future.
+                          <p>
+
+                          <br>
+                          <br>
+                          <h3><u>Cluster Analysis</u></h3>
+                          <img src="image/post1/asset_cluster_workflow.png">
+                          <img src="image/post1/cluster.png">
+                          <br>
+                          <p>
+                          For the clustering metric, we used a Path Similarity Analysis (PSA) metric, Hausdorff distance. It is the 
+                          distance between A and B with the smallest positive number r, such that every point of A is within distance r 
+                          of some point of B, and every point of B is within distance r of some point of A. In other words, it is the 
+                          greatest of all the distances from a point in one set to the closest point in the other set. 
+                          </p>
+                          <br>
+                          <p>
+                          For the clustering method, we used Hierarchical clustering. Hieracrchial clustering starts with all the data  
+                          points assigned to a cluster of their own. The two nearest clusters are then merged into the same cluster. In the end, 
+                          this algorithm terminates when there is only a single cluster let.
+                          </p>
+
+                          <p>In the application, users are able to select the specific rolling window to apply the clustering 
+                          algorithm on. Upon selecting the rolling window, a dendrogram will be created to show the hierarchical 
+                          clustering of the data. Based on the dendrogram, users are able to view the clusters at different distances.
+                           A drop down list of distances will be created for users to select where they would like to cut the dendrogram at, 
+                           obtaining the number of clusters at the respective selected distance. 
+
+                          Upon selecting the distance level to cluster the data at, a new dendrogram will be displayed to show the distance
+                           at which the user selected to cluster the data at. The lines of the assets are then coloured based on the clusters
+                            that they belong to. The respective clusters will be returned in a tabular format, showing which assets belong 
+                            to which cluster. On top of that, an asset network node graph will be displayed based on the clustering. 
+                            The assets are coloured (same colours as the dendrogram) according to their clusters. The network asset graph 
+                            shows the distance among the assets, allowing users to better visualise the relationship among the assets and 
+                            at the same time, view which clusters they belong to. For now, a threshold of 0.15 is being set to avoid an 
+                            overcrowded network asset graph. 
+
+                          With the above information, users are able to choose what assets they would like to place in the same portfolio
+                           based on how different they are by viewing which clusters they are in and how much they differ from the clusters
+                            or other assets (based on the distance) to derive a diversified portfolio.
+                          </p>
+
+            <img  style="width:600px;" src="images/post1/relative returns.png">
+
+            <p>Application is built using flask, html, css and Javascript. Additional features include error handling, cron job and automated data removal</p>
         </div>
       </div>
     </section> <!-- .section -->
